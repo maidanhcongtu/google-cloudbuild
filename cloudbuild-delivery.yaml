@@ -22,6 +22,9 @@ steps:
   - 'apply'
   - '-f'
   - 'kubernetes.yaml'
+  env:
+  - 'CLOUDSDK_COMPUTE_ZONE=asia-southeast1-a'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=algebraic-road-262505'
 
 # This step copies the applied manifest to the production branch
 # The COMMIT_SHA variable is automatically
